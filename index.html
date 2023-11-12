@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Mi curriculum</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mi curriculum</title>
+</head>
 
-    <body>
+<body>
     
-    <div class="navegador">
+    <!--Menu-->
+    <nav class="navegador">
+        <input type="checkbox" id="menu">  
+        <label for="menu"> ☰ </label>
         <ul>
             <li><a href="index.html">INICIO</a></li>
             <li><a href="datos.html">DATOS PERSONALES</a></li>
             <li><a href="competencias.html">COMPETENCIAS</a></li>
             <li><a href="educacion.html">EDUCACIÓN</a></li>
             <li><a href="experiencia.html">EXPERIENCIA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <h2>Inicio</h2>
-
-    <div class="cajatexto"> 
-        <img src="imagen/foto_perfil.jpg" alt="fotoperfil">
-        <p class="p1">CV - Tomás Iriarte</p>
-        <p class="p2">Estudiante de 4to año de la carrera Lic. en Comercialización (Marketing) en UADE</p>
-        <br>
-    </div>
+    <!--Contenido principal-->
     
-    <!--  ESTO ES MI FOOTER    -->
-
+    <main>
+        <div class="bodyindex">
+            <h2>Inicio</h2>
+            <div class="cajaprincipal">
+                <img src="imagen/foto_perfil.jpg" alt="fotoperfil" class="imagen">
+                <div class="cajatexto-inicio">
+                    <h3>CV - Tomás Iriarte</h3>
+                    <h4>Estudiante de 4to año de la carrera Lic. en Comercialización (Marketing) en UADE</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- FUERA DE LA ETIQUETA MAIN -->
+    
     <footer>
         <div class="logolinkedin">
             <a href="https://www.linkedin.com/in/tom%C3%A1s-iriarte/"><img src="imagen/logolinkedin.png" alt="logo linkedin" width="50" height="50"></a>
         </div>
         <p class="textofooter">© Derechos reservados - Tomas Iriarte</p>
-        </div>
     </footer>
+    
      
-    </body>
-
+</body>
 </html>
