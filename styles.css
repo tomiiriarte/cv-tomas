@@ -37,33 +37,42 @@ html{ height: 100%;}
 /* INICIO */
 
 .cajaprincipal{
-    width: 60%;
+    width: 70%;
     background-color: #bbb7b2;
     text-align: center;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     color: #beb09b;
     font-size: 50px;
     border: 40px;
     border-radius: 40px;
     margin: 40px;
     font-family: system-ui, -apple-system, sans-serif;
-    margin-left: 23rem;
-    padding-bottom: 5rem;
-    height: auto;
-    margin-bottom: 50%;
+    margin-left: 18rem;
+    padding-bottom: 0.05rem;
+    padding-top: 0.1rem;
+    height: 70%;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .imagen{
     border-radius: 20px;
     max-width: 20%;
     height: auto;
-    margin-right: 70%;
-    margin-top: 2rem;
+    margin: 4rem;
 }
 
-.cajatexto {
+.cajatexto-inicio {
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%; /* Altura responsiva */
+    width: 90%; /* Ancho responsivo */
+    margin: 2rem auto 0 auto; /* Márgenes superior e inferior de 2rem, centrado horizontalmente */
 }
 
 .cajaimagen{
@@ -81,15 +90,12 @@ html{ height: 100%;}
 }
 
 .cajatexto-inicio h3 {
-    padding: 2rem;
     color: #346573;
     text-align: center;
     position: relative;
-    font-size: 2.5rem; /* Usar 'rem' para dimensiones responsive */
+    font-size: 3.5rem; /* Usar 'rem' para dimensiones responsive */
     font-weight: bold;
     margin: 1rem;
-    margin-left: 5%; /* Ajustar este valor para alinear */
-    margin-bottom: 50%; /* Un valor en 'rem' para el espaciado hacia abajo */
 }
 
 .cajatexto-inicio h4 {
@@ -101,6 +107,7 @@ html{ height: 100%;}
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     margin-left: -40px;
+    margin-bottom: 5rem;
 }
 
 h2{
@@ -265,6 +272,9 @@ body {
     padding: 0;
     width: 100%;
     overflow-x: hidden; /* Esto oculta la barra de desplazamiento horizontal */
+    background-image:url("fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* EXPERIENCIA */
@@ -371,12 +381,6 @@ button:hover {
     margin-right: 13rem;
 }
 
-body {
-    background-image: url('imagen/fondo oficial.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .logolinkedin{
     width: 10%;
     height: 10%;
@@ -391,7 +395,7 @@ label[for="menu"] {
     /* Agrega estilos de diseño a tu etiqueta ☰ aquí */
 }
 
-@media screen and (max-width: 400px) and (max-height: 700px) {
+@media screen and (max-width: 700px) and (max-height: 700px) {
 
     /* MENU HAMBURGUESA */
     .navegador ul {
@@ -440,50 +444,155 @@ label[for="menu"] {
         margin-top: 1rem;
     }
 
-    img[alt="fotoperfil"] {
-        height: 140px;
-        width: 110px;
-        margin-bottom: 0; /* Ajustado para no desbordar */
-        position: relative; /* Establece la posición relativa para utilizar valores de desplazamiento */
-        bottom: 24rem;; /* Mueve la imagen hacia arriba */
-        left: 4rem; /* Mueve la imagen hacia la derecha */
+    .imagen{
+        height: 30%;
+        width: 20%;
         border: 2px solid #333; /* Agregar un borde */
+        margin-top: -3rem; /* Desplazar hacia arriba */
+        margin-right: -6rem; /* Desplazar hacia la derecha */
     }
 
 
-    .texto1 p {
-        font-size: 20px;
-        margin-top: 80%;
+    .cajatexto-inicio h3 {
+        font-size: 22px;
+        margin-top: 17rem;
     }   
 
-    .texto2 .p2 {
+    .cajatexto-inicio h4 {
         font-size: 20px;
-        margin-left: -8rem;
-        margin-top: -7rem;
+        margin-left: 0.5rem;
+        padding-left: 0;
     }
 
     /* DATOS PERSONALES */
+
     .cajatextodp {
-        margin-left: 18%;
+        margin: 0;
+        margin-left: 3.5rem;
+        margin-top: 0.3rem;
+        padding-bottom: 0;
     }
 
     .imagen-datos {
         width: 40%;
         margin-top: -40px;
-        margin-left: 260px;
+        margin-left: 8.5rem;
     }
 
     .textodp {
-        font-size: 25px;
+        font-size: 18px;
         padding: 10px;
         border: 20px;
         border-radius: 20px;
         margin: 20px;
         max-height: 300px;
-        margin-left: -75px;
+        margin-left: -3rem;
         padding-bottom: 4rem;
         margin-top: 340px;
         height: auto;
+    }
+
+    /* COMPETENCIAS */
+
+    .cajatexto-competencias {
+        margin: 0;
+        margin-left: 3.5rem;
+        margin-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .textocompetencias {
+        font-size: 16px;
+        padding: 10px;
+        border: 20px;
+        border-radius: 20px;
+        margin: 20px;
+        max-height: 300px;
+        margin-left: -3rem;
+        padding-bottom: 4rem;
+        margin-top: 15rem;
+        height: auto;
+    }
+
+    .imagen-competencias{
+        width: 50%;
+        margin-left: 8.5rem;
+        top: 0.8rem;
+    }
+
+    /* EDUCACIÓN */
+    
+    .cajatextoeducacion {
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+        width: 75%;
+        margin-left: 1.5rem;
+    }
+
+    .textoeducacion {
+        font-size: 14px;
+        padding: 10px;
+        border: 20px;
+        border-radius: 20px;
+        margin: 20px;
+        max-height: 300px;
+        margin-left: -3rem;
+        padding-bottom: 4rem;
+        margin-top: 13rem;
+        height: auto;
+    }
+
+    .cajatextoeducacion img{
+        width: 40%;
+        margin-left: 11rem;
+        top: 0.8rem;
+    }
+    
+    /* EXPERIENCIA */
+    .cajatextoexp{
+        margin: 0;
+        margin-left: 3.5rem;
+        margin-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .textoexperiencia {
+        font-size: 16px;
+        margin-left: -3rem;
+        margin-top: 18.5rem;
+    }
+
+    .textoexperiencia2{
+        font-size: 14px;
+        padding: 10px;
+        border: 20px;
+        border-radius: 20px;
+        margin: 20px;
+        max-height: 300px;
+        margin-left: -2.7rem;
+        margin-top: 0;
+        height: auto;
+    }
+
+    .imgexperiencia{
+        width: 40%;
+        margin-left: 9.5rem;
+        top: 0.5rem;
+    }
+
+    /* CONTACTO */
+    #formularioContacto input[type="text"],
+    #formularioContacto input[type="email"],
+    #formularioContacto textarea {
+        margin: -10px 0 5px 0; /* Desplazar hacia arriba */
+        width: 80%;
+        margin-left: 1.5rem;
+        font-size: 8px;
+    }
+    
+    #formularioContacto button {
+        margin-left: 8.5rem; /* Ajusta este valor según tu preferencia */
     }
 
     /* FOOTER */
@@ -494,8 +603,7 @@ label[for="menu"] {
     }
 
     .textofooter {
-        width: 50px;
-        height: auto;
+        font-size: 16px;
         transform: scale(0.8);
         margin-right: 60px;
     }

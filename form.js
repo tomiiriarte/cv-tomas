@@ -27,7 +27,7 @@ function enviarFormulario(event) {
     }
 
     // Aquí puedes agregar lógica adicional, como enviar los datos a un servidor
-    alert('Formulario enviado:\n\nNombre: ' + nombre + '\nEmail: ' + email + '\nMensaje: ' + mensaje + '\nEn las próximas 24hs me estaré comunicando!');
+    alert('Formulario enviado:\n\nNombre: ' + nombre + '\nEmail: ' + email + '\nMensaje: ' + mensaje + '\n¡Gracias por su contacto! A la brevedad me estaré comunicando.');
 
     // Limpiar los campos después de enviar
     document.getElementById('nombre').value = '';
