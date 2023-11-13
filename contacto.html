@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="css/form.js"></script>
+    <title>Mi curriculum</title>
+    
+    <style>
+        /* Estilo para mensajes de error */
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+    
+    <style>
+        #formularioContacto {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 5rem;
+        }
+        /*...otros estilos...*/
+    </style>
+</head>
+    
+    <body>
+
+    <nav class="navegador">
+        <input type="checkbox" id="menu">  
+        <label for="menu"> ☰ </label>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="datos.html">DATOS PERSONALES</a></li>
+            <li><a href="competencias.html">COMPETENCIAS</a></li>
+            <li><a href="educacion.html">EDUCACIÓN</a></li>
+            <li><a href="experiencia.html">EXPERIENCIA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div class="error-message" id="nombreError"></div>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="emailError"></div>
+
+            <label for "mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <div class="error-message" id="mensajeError"></div>
+
+            <button type="button" onclick="enviarFormulario(event)">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Otras secciones de tu currículum -->
+
+    <!-- Agrega aquí tus scripts JavaScript -->
+
+    <footer>
+        <div class="logolinkedin">
+            <a href="https://www.linkedin.com/in/tom%C3%A1s-iriarte/"><img src="imagen/logolinkedin.png" alt="logo linkedin" width="50" height="50"></a>
+        </div>
+        <p class="textofooter">© Derechos reservados - Tomas Iriarte</p>
+    </footer>
+    </body>
+</html>
+
+
