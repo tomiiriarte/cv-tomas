@@ -34,6 +34,17 @@ html{ height: 100%;}
     align-items: center;
 }
 
+/* FONDO */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+    background-image:url("fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* INICIO */
 
 .cajaprincipal{
@@ -70,9 +81,9 @@ html{ height: 100%;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75%; /* Altura responsiva */
-    width: 90%; /* Ancho responsivo */
-    margin: 2rem auto 0 auto; /* Márgenes superior e inferior de 2rem, centrado horizontalmente */
+    height: 75%; 
+    width: 90%; 
+    margin: 2rem auto 0 auto; 
 }
 
 .cajaimagen{
@@ -267,16 +278,6 @@ footer p{
     top:95px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Esto oculta la barra de desplazamiento horizontal */
-    background-image:url("fondo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* EXPERIENCIA */
 
 .cajatextoexp {
@@ -330,36 +331,35 @@ body {
 /* CONTACTO */
 
 #formularioContacto {
-    max-width: 600px; /* Ajusta el ancho máximo según sea necesario */
-    margin: auto; /* Centra el formulario en el contenedor padre */
+    max-width: 600px; 
+    margin: auto; 
     margin-top: 5rem;
 }
 
 /* Estilos para las etiquetas */
 label {
-    display: block; /* Coloca cada etiqueta en una línea nueva */
-    margin-bottom: 10px; /* Agrega un pequeño espacio debajo de cada etiqueta */
-    font-size: 25px;
+    display: block; 
+    margin-bottom: 7px; 
+    font-size: 23px;
 }
 
 /* Estilos para los campos de entrada */
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    padding: 15px; /* Ajusta el relleno según sea necesario */
-    margin-bottom: 20px; /* Agrega un espacio entre los campos */
-    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto */
+    width: 100%; 
+    padding: 15px; 
+    margin-bottom: 20px; 
 }
 
 /* Estilo para el botón de enviar */
 button {
-    background-color: #4CAF50; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 12px 20px; /* Ajusta el relleno según sea necesario */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Borde redondeado */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
 }
 
 /* Cambia el estilo del botón cuando se pasa sobre él */
@@ -369,8 +369,8 @@ button:hover {
 
 .error-message {
     color: red;
-    font-size: 18px; /* Ajusta el tamaño de fuente según tu preferencia */
-    margin-top: -10px; /* Mueve el mensaje hacia arriba */
+    font-size: 18px; 
+    margin-top: -10px; 
 }   
 
 /* FOOTER */
@@ -386,6 +386,8 @@ button:hover {
     height: 10%;
 }
 
+/* MENÚ HAMBURGUESA */
+
 input[type="checkbox"] {
     display: none;
 }
@@ -395,7 +397,7 @@ label[for="menu"] {
     /* Agrega estilos de diseño a tu etiqueta ☰ aquí */
 }
 
-@media screen and (max-width: 700px) and (max-height: 700px) {
+@media screen and (max-width: 700px) {
 
     /* MENU HAMBURGUESA */
     .navegador ul {
@@ -447,9 +449,9 @@ label[for="menu"] {
     .imagen{
         height: 30%;
         width: 20%;
-        border: 2px solid #333; /* Agregar un borde */
-        margin-top: -3rem; /* Desplazar hacia arriba */
-        margin-right: -6rem; /* Desplazar hacia la derecha */
+        border: 2px solid #333; 
+        margin-top: -3rem; 
+        margin-right: -6rem; 
     }
 
 
